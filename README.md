@@ -38,12 +38,14 @@ Before running the project, ensure you have:
 
 ```bash
 git clone https://github.com/Chandupa-H/NextAuth-Authentication.git
-cd your-repo-name
+cd NextAuth-Authentication
 ```
 
 ### 2. Install Dependencies
 
-`bash npm install `
+```bash
+npm install
+```
 
 ### 3. Configure Environment Variables
 
