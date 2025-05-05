@@ -34,18 +34,22 @@ Before running the project, ensure you have:
 
 ## Setup Instructions
 
-1. Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Chandupa-H/NextAuth-Authentication.git
 cd your-repo-name
+```
 
-2. Install Dependencies
-npm install
+### 2. Install Dependencies
 
-3. Configure Environment Variables
+`bash npm install `
+
+### 3. Configure Environment Variables
+
 Create a .env.local file in the root directory and add these
 
+```bash
 MONGODB_URI=mongodb://localhost:27017/yourdbname
 GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
@@ -53,12 +57,17 @@ APPLE_CLIENT_ID=your_apple_client_id
 APPLE_CLIENT_SECRET=your_apple_client_secret
 NEXTAUTH_URL=http://localhost:3000
 NEXTAUTH_SECRET=your_random_secret
+```
 
 NEXTAUTH_SECRET: A random string (e.g., generate with openssl rand -base64 32).
 
-5. Run the Development Server
-npm run dev
+### 5. Run the Development Server
 
+```bash
+npm run dev
+```
+
+## Usage
 
 Home Page (/): Displays navigation buttons:
 Protected: Navigates to /protected (requires authentication).
@@ -69,4 +78,3 @@ Sign Out: Appears when logged in, logs out and redirects to /.
 Sign Up/Sign In (/signup): Log in with Google or Apple.
 Protected Page (/protected): Shows user email if logged in; redirects to /signup if not.
 Public Page (/public-page): Public content.
-```
